@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dosicalc — Desarrollador</title>
+  <meta name="description" content="Página del desarrollador de Dosicalc, aplicación de apoyo al cálculo de dosis para personal sanitario.">
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #5c6570;
+      --primary: #1976d2;
+      --primary-dark: #0d47a1;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: #fff;
+      padding: 2.5rem 1.25rem;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 0.35rem; font-size: 2rem; font-weight: 700; }
+    header p { margin: 0; opacity: 0.92; font-size: 1.05rem; }
+    main {
+      max-width: 42rem;
+      margin: -1.5rem auto 2rem;
+      padding: 0 1.25rem;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    }
+    h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1.15rem;
+      color: var(--primary-dark);
+    }
+    p { margin: 0 0 0.75rem; color: var(--text); }
+    p:last-child { margin-bottom: 0; }
+    .muted { color: var(--muted); font-size: 0.95rem; }
+    ul { margin: 0.5rem 0 0; padding-left: 1.25rem; }
+    li { margin-bottom: 0.35rem; }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: 1.5rem 1.25rem 2rem;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dosicalc</h1>
+    <p>Herramienta de apoyo al cálculo de medicación</p>
+  </header>
+  <main>
+    <section>
+      <h2>Desarrollador</h2>
+      <p><strong>Vegas Varo</strong></p>
+      <p class="muted">
+        Desarrollo de aplicaciones Android orientadas al ámbito sanitario y de enfermería.
+      </p>
+    </section>
+    <section>
+      <h2>Sobre la aplicación</h2>
+      <p>
+        <strong>Dosicalc</strong> es una aplicación de apoyo educativo para el personal de enfermería
+        y otros profesionales sanitarios. Facilita el cálculo de dosis, la consulta de administración
+        intravenosa directa y la organización de turnos nocturnos («Partir la noche»).
+      </p>
+      <p class="muted">
+        La información de la app no sustituye el juicio clínico ni los protocolos de cada centro.
+        Antes de administrar cualquier medicación, verifique dosis, vías y tiempos en fuentes oficiales.
+      </p>
+    </section>
+    <section>
+      <h2>Enlaces</h2>
+      <ul>
+        <li>
+          <a href="https://vegasvaro.github.io/dosicalc-privacy/" rel="noopener noreferrer">
+            Política de privacidad
+          </a>
+        </li>
+        <li>
+          <a href="https://play.google.com/store/apps/details?id=com.vegasvaro.dosicalc" rel="noopener noreferrer">
+            Dosicalc en Google Play
+          </a>
+          <span class="muted"> (si la ficha ya está publicada)</span>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Contacto</h2>
+      <p>
+        Para consultas sobre la aplicación o privacidad, puede escribir a:
+        <a href="mailto:alvaro.vega2003@gmail.com">alvaro.vega2003@gmail.com</a>
+      </p>
+      <p class="muted">
+        Sustituya la dirección de correo anterior por la suya antes de publicar la página.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p>© <span id="year"></span> Vegas Varo · Dosicalc</p>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
